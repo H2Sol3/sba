@@ -11,7 +11,7 @@ class Member{
 		System.out.println("------------------------------------");
 		System.out.println("아이디: "+id+"\n이름: "+name+"\n나이: "+age);
 		System.out.println("가입 완료되었습니다.");
-		System.out.println("------------------------------------");
+		System.out.println("------------------------------------"); 
 //		System.out.println(id+pw+name+age);
 		this.id=id;
 		this.pw=pw;
