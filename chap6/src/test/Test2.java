@@ -29,7 +29,7 @@ class Member{
 			System.out.println("로그인 정보를 확인하세요.");
 			System.out.println("------------------------------------");
 		}
-	}
+	} 
 	//암호 변경
 	void setPassword(int pw) {
 		this.pw=pw;

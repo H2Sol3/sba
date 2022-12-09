@@ -17,7 +17,7 @@ package chap6;
 //}
 
 public class EmployeeArrayTest {
-	//class 안에는 변수+메소드 필요
+	//class 안에는 변수+메소드 필요 
 	public static void main(String[] args) {
 		//사원수가 10명일땐 객체를 10개 생성해야 함. 너무 비효율적이니 배열에다 저장
 		//배열-Employee객채만 10 저장

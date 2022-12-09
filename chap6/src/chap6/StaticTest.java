@@ -26,6 +26,6 @@ public class StaticTest {
 //		p2.nation="한국"; static으로 고정해두었기때문에 넣어줄 필요 없음. 
 		System.out.println(p2.name+":"+p2.age+":"+p2.nation);
 		
-	}
+	} 
 
 }

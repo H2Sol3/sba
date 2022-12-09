@@ -19,7 +19,7 @@ class D {
 
 public class OverloadTest {
 	public static void main(String[] args) {
-		D d1 = new D();
+		D d1 = new D(); 
 		String result1 = d1.add("Spring ", "framework");
 		double result2 = d1.add(2.5, 1.1);
 		int result3 = d1.add(4, 5);

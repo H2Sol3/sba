@@ -16,7 +16,7 @@ class B{
 	}
 	int[] m4(int[] arr) {//arr 배열 각 요소에 *10 배열 저장해서 리턴
 		int[] result =new int[arr.length];
-		for(int i=0;i<arr.length;i++) {
+		for(int i=0;i<arr.length;i++) { 
 			result[i]=arr[i]*10;
 		}
 		return result;

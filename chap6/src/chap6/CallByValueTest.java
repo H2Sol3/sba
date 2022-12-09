@@ -16,7 +16,7 @@ class C {
 
 public class CallByValueTest {
 	public static void main(String[] args) {
-		C c = new C();
+		C c = new C(); 
 	//  기본형변수 전달 테스트 코드
 //		int j = 10;
 //		c.add(j);//인수: 실제로 매개변수로 전달하는 값

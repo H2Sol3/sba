@@ -33,7 +33,7 @@ class Trainee {
 		System.out.printf("이름: %s\n과정명: %s\n교육비: %d\n교육기관: %s\n부가금: %d\n환급비: %d", name, subject, fee,
 				Trainee.location, addFee, returnFee);
 	}
-}
+} 
 
 public class Test1_review {
 	public static void main(String[] args) {

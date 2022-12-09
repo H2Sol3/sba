@@ -29,7 +29,7 @@ class Student {
 	}
 }
 
-
+ 
 public class Test1 {
 	public static void main(String[] args) {
 //		교육생 a1 = new 교육생();

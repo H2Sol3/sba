@@ -14,7 +14,7 @@ class Employee{
 	String dept;
 	double salary;
 	void printInform() {
-		int id=1000;
+		int id=1000; 
 		System.out.printf("사원명: %d 이름: %s 직급: %s 부서명: %s 급여: %.2f \n\n",this.id,this.name,
 				title,dept,salary);//id는 this 붙여주기
 	}
