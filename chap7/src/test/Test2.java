@@ -65,30 +65,26 @@ class Member extends Information {
 	}
 }
 
-class InformationList extends Information {
+class InformationList{
 
-	Information[] in; // 입력 수만큼 배열 객체 생성
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	Information[] informArr; // 입력 수만큼 배열 객체 생성
 	int cnt=0;
-
+//  int length=0;
+	
 	public InformationList(String length) { // 명령행
-		this.in = new Information[Integer.parseInt(length)];
+		this.informArr = new Information[Integer.parseInt(length)];
+		
+//		this.length=Integer.parseInt(length);
+//		informArr = new Information[this.length];
 	}
 
 	void add(Information inform) { //객체 저장
 		
-		if(cnt >= in.length) {
-			System.out.println("오류");
+		if(cnt >= informArr.length) {
+		//	System.out.println("오류");
+			return;
 		} else {
-			in[cnt]=inform;
+			informArr[cnt]=inform;
 			cnt++;
 		}
 		
@@ -97,7 +93,10 @@ class InformationList extends Information {
 	
 	void read() {// 내용 출력
 		for (int i = 0; i < cnt; i++) {
-			System.out.println(in[i].print());
+			if(informArr[i]!=null) {//null아닐때 출력
+				System.out.println(informArr[i].print());
+				
+			}
 		}
 	}
 
