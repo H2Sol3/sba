@@ -9,7 +9,7 @@ public class ObjectClassTest {
 		//getClass().getName() + '@' + Integer.toHexString(hashCode())
 		//패키지명.클래스명@16진수(해쉬코드)
 //		System.out.println(o1/*.toString 출력문에 자동으로 toString 호출 되어있다고 함. 아래 o1.toString과 o1은 같은 내요임*/);
-		System.out.println(o1.toString()); //java.lang.Object@58ceff1
+		System.out.println(o1.toString()); //java.lang.Object@58ceff1 
 		System.out.println(o2.toString()); //java.lang.Object@7c30a502
 		
 		System.out.println(o1 == o2); //false
