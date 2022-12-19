@@ -22,12 +22,7 @@ public class SplitTest {
 		String[] result=address.split("(:|;|-|==|\\.|\\?)");
 		System.out.println(Arrays.toString(result)); //[서울시, 용산구, 청파동, 전자월드, 3층, 새싹아카데미]
 
-		
-		
-		
-		
-		
-		
+	
 
 	}
 
