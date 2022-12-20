@@ -29,7 +29,6 @@ class Student {
 	}
 }
 
- 
 public class Test1 {
 	public static void main(String[] args) {
 //		교육생 a1 = new 교육생();
@@ -52,47 +51,6 @@ public class Test1 {
 
 		System.out.println("이름: " + name + "\n과정명: " + class_name + "\n교육비: " + money + "\n교육기관: " + std.academy
 				+ "\n부가금: " + std.plus_money + "\n환급비: " + std.return_money);
-			
+
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

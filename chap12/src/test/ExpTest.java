@@ -32,10 +32,12 @@ public class ExpTest {
 			for (int j = 0; j < expressions[i].length(); j++) {
 				if (expressions[i].charAt(j) == '(') {
 					stack.push(7);
+					System.out.println("push"+stack);
 				}
 				if (expressions[i].charAt(j) == ')') {
 					try {
 						stack.pop();
+						System.out.println("pop"+stack);
 					} catch (EmptyStackException e) {
 						stack.push(4);
 					}
@@ -43,8 +45,8 @@ public class ExpTest {
 				}
 			}
 			if (stack.isEmpty()) {
-				System.out.println(expressions[i]);
-			}
+				System.out.println("괄호 일치 수식:"+expressions[i]);
+			}else System.out.println("괄호 불일치 수식:"+expressions[i]);
 			stack.clear();
 		}
 
