@@ -33,7 +33,7 @@ public class MonthEmployee {
 			
 			String sql = "SELECT month(hire_date),sum(salary) FROM emp_copy "
 					+ "WHERE MONTH(hire_date) != ? "
-					+ "GROUP BY month(hire_date)";
+					+ "GROUP BY month(hire_date)"; 
 			
 			PreparedStatement pt = con.prepareStatement(sql); 
 			pt.setInt(1, month);
