@@ -14,7 +14,7 @@ package test;
 */
 
 class CellPhone {
-	String model;
+	String model; 
 	double battery;
 
 	CellPhone(String model) {
