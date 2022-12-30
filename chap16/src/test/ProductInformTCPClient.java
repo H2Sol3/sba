@@ -1,4 +1,4 @@
-package chap16;
+package test;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -18,9 +18,13 @@ public class ProductInformTCPClient {
 
 		System.out.println("==클라이언트가 " + serverip + " 서버로 접속했습니다. ==");
 		OutputStream os = s.getOutputStream();
+		// String request = name + "-" price + "-" + balance ;
+		// byte [] by = request.getBytes();
+		// os.write(by);
 
 		name = name + " ";
 		os.write(name.getBytes());
+		// name price balance
 		////////////////////////////////////////
 
 		/////////////////////////////////////////////////////////////////////////
