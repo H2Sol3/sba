@@ -19,7 +19,7 @@ public class MonthEmployee {
 		ArrayList<String> al = new ArrayList<String>();
 		try {
 			// 0. jdbc driver 호출
-			Class.forName(ConnectionInform.DRIVER_CLASS);
+			Class.forName(ConnectionInform.DRIVER_CLASS); 
 			// 1. db연결
 			con = DriverManager.getConnection(ConnectionInform.JDBC_URL, ConnectionInform.USERNAME,
 					ConnectionInform.PASSWORD); // final변수에 경로 저장해놓고 경로를 JDBC_URL로 변경해주기
