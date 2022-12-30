@@ -43,7 +43,7 @@ public class MonthEmployee {
 				int mon = rs.getInt("month(hire_date)");
 				int salary = rs.getInt("sum(salary)");
 				al.add(mon+"월: "+salary);
-	//			System.out.printf("%d    %d  \n",  mon, salary);
+	//			System.out.printf("%d    %d  \n",  mon, salary); 
 			}
 			System.out.println("연결 해제 성공");
 		} catch (ClassNotFoundException e) {
