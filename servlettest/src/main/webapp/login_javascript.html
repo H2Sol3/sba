@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 폼</title>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('form').on('submit',function(){
+		//1. id입력란에 admin administrator administration 중 하나를 입력하면
+		//role 변수의 값을 admin으로 설정
+		//3개 중 하나 입력이 아니면 role 변수값을 user로 설정.
+		//2. form태그 action속성을 만들고 loginjs지정해주기.
+		//3. 메서드 방식은 post로 설정
+// 		let id = document.getElmentById("id");
+// 		let role = document.getElmentById("role");
+		
+// 		if(id.equals("admin")||id.equals("administrator")||id.equals("administration")){
+// 			role="admin";
+// 		}else{
+// 			role="user";
+// 		}
+		
+		//강사님 코드
+		var id = $('input:text').val(); //text값 읽어오기
+		if(id == "admin"||id == "administrator"||id == "administration"){
+			$('input:hidden').val("admin");
+		}else{
+			$('input:hidden').val("user");
+		}
+		
+		this.action = "Loginjs";
+		this.method = "post";
+		
+	});
+});
+</script>
+</head>
+<body>
+	<h1>로그인하세요2</h1>
+<form action="Loginjs" method="post">
+		아이디 입력: <input type="text" name="id"><br> 
+		암호 입력: <input type="password" name="pw"><br> 
+		<!-- role의 값은 admin -->
+		<input type="hidden" name="role" > <!-- 브라우저에 보여지지않는 값 전송. 그래서 항상 value값이 있어야 함. -->
+		<input type="submit" value="로그인">
+	</form>
+</body>
+</html> 
