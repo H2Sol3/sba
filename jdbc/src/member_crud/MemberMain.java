@@ -20,14 +20,17 @@ public class MemberMain {
 				break;
 			} else if (menu == 1) {
 				new MemberInsertView().input(); // MemberInsertView객체 생성 후 호출
+			} else if (menu == 2) {
+				new MemberUpdateView().input();
+			} else if (menu == 3) {// id, pw 입력하면 이름,주소같은 내 정보만 조회
+				new MemberDeleteView().input();
+			} else if (menu == 4) {// id, pw 입력하면 이름,주소같은 내 정보만 조회
+				new OneSelectView().input();
 			} else if (menu == 5) {// 전체 회원 조회
 				// 페이징 처리
 				// 10명 이상 입력되었다고 가정 후 1페이지 당 3명만 보이게 하기
 				new TotalSelectView().input();
-			} else if (menu == 4) {// id, pw 입력하면 이름,주소같은 내 정보만 조회
-				new OneSelectView().input();
 			}
-
 		} // while
 
 	}// main
