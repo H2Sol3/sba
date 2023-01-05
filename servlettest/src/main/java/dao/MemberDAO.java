@@ -103,7 +103,7 @@ public class MemberDAO {
 		return cnt; 
 	} // getTotalMember
 
-	ArrayList<MemberDTO> getMemberList(int currentpage, int memberPerPage) { // 클릭한 페이지에 저장된 회원 목록 조회
+	public ArrayList<MemberDTO> getMemberList(int currentpage, int memberPerPage) { // 클릭한 페이지에 저장된 회원 목록 조회
 		ResultSet rs = null;
 		PreparedStatement pt = null;
 		Connection con = null;

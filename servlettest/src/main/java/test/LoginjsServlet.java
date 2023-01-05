@@ -27,11 +27,11 @@ public class LoginjsServlet extends HttpServlet {
 			output="<h1>" + id + " 관리자님 환영합니다.</h1>";
 		}else { //user
 			output="<h1>" + id + " 회원님 환영합니다.</h1>";
-		}
+		} 
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
 		out.println(output);
-		out.println("<a href='delete_db.html'>회원탈퇴</a>");
+		out.println("<a href='delete_db.html?id="+id+"'>회원탈퇴</a>");
 		
 	}
 } 

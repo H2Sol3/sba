@@ -8,9 +8,9 @@
 $(document).ready(function(){
 	$('form').on('submit',function(){
 			if(confirm("진짜 탈퇴하실건가요????")==true){
-				location.href="/delete";
+				this.action="delete";
 			}else{
-				location.href="delete_db.html";
+				this.action="delete_db.html";
 			}
 			
 			
@@ -19,9 +19,10 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
-	<form >
-		<h1>탈퇴하려면 버튼을 클릭하세요.</h1>
-		<input type="hidden" value="">
+	<form action="delete">
+		<h1>탈퇴하려면 정보 입력 후 버튼을 클릭하세요.</h1>
+아이디:	<input type="text" name="id"><br>
+비밀번호:	<input type="password" name="pw"><br><br>
 		<input type="submit" value="탈퇴">
 	</form>
 </body>
