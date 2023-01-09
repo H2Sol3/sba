@@ -115,7 +115,7 @@ public class MemberDAO {
 					ConnectionInform.PASSWORD);
 
 			// insert(pw,1,2,repeat('*',2)) : 1번 인덱스부터 2개까지 내용 비우기, * 2개 반복
-			String sql = "select id, insert(pw,2,char_length(pw)-1,repeat('*',char_length(pw)-1)) as pw, "
+			String sql = "select id, address, insert(pw,2,char_length(pw)-1,repeat('*',char_length(pw)-1)) as pw, "
 					+ "name, indate from member order by indate limit ?, ?";
 
 			pt = con.prepareStatement(sql);
@@ -127,6 +127,7 @@ public class MemberDAO {
 				MemberDTO dto = new MemberDTO(rs.getString("id"), rs.getString("name"), rs.getString("indate"));
 				// dao에 생성자 생성
 				dto.setPw(rs.getString("pw")); // 원래 문장은 너무 기니까 as 붙여줘서 가져오기&생성자에 pw추가하기 귀찮으니 set으로 넘기기
+				dto.setAddress(rs.getString("address"));
 				list.add(dto);
 			}
 		} catch (Exception e) {

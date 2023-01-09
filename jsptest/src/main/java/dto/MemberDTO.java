@@ -2,6 +2,7 @@ package dto;
 
 public class MemberDTO {
 
+	// html form(parameter명) 입력 ---- dto(변수명) ---- db table(컬럼명)
 	String id, pw, name, email, address, phone, indate; // memberinsertview에서 생성한 변수 선언해주기
 	// 자바 - int, double, date, String
 	// 마리아db - int, double, datetime, char/varchar
