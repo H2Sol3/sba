@@ -11,9 +11,9 @@
 <form action="beansession1.jsp">
 
 아이디: <input type=text name="id" ><br>
-암호: <input type=password name="password" ><br>
+암호: <input type=password name="pw" ><br>
 이름: <input type=text name="name" ><br>
-폰: <input type=tel name="phonenumber" ><br>
+폰: <input type=tel name="phone" ><br>
 이메일: <input type=tel name="email" ><br>
 <input type="submit" value="가입">
 

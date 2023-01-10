@@ -5,11 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Insert</title>
 </head>
 <body>
 ==========================================================
-<jsp:useBean id="dto2" class="dto.MemberDTO" scope="application"/>
-<jsp:setProperty property="*" name="dto2"/>
+<jsp:useBean id="dto" class="dto.MemberDTO" scope="session"/>
+<jsp:setProperty property="*" name="dto"/><!-- dto.setxxxx(request.getParamter("xxxx") -->
 </body>
 </html> 

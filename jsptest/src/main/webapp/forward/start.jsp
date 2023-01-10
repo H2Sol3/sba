@@ -38,7 +38,7 @@
 	%>
 
 	<jsp:forward page="<%=filename%>">
-		<jsp:param value="<%=URLEncoder.encode(\"홍길동\")%>" name="username" />
+		<jsp:param value="<%=URLEncoder.encode(\"홍길동2\")%>" name="username" />
 	</jsp:forward>
 </body>
 </html>

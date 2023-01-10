@@ -26,14 +26,20 @@ public class InputServlet extends HttpServlet {
 		MemberDAO dao = new MemberDAO();
 		MemberDTO dto = new MemberDTO();
 		String id = request.getParameter("id");
+		String pw = request.getParameter("pw");
 		String menu = request.getParameter("menu");
-		int pageNum = Integer.parseInt(request.getParameter("page"));
+		String jspName = "";
 		
-		if(id.equals("admin")&&menu.equals("memberlist")) {
-			ArrayList<MemberDTO> arr = dao.getMemberList(pageNum, 3);
-			RequestDispatcher rd = request.getRequestDispatcher("memberList.jsp");
-			request.setAttribute("arr", arr);
+		if (menu.equals("memberlist")) {			
+			int page = Integer.parseInt(request.getParameter("page"));
+			ArrayList<MemberDTO> memberlist = dao.getMemberList(page, 3);
+			//forward
+			request.setAttribute("memberlist", memberlist);
+			jspName = "member/memberlist.jsp";
+			// <jsp:userBean id="memberlist" class="java.util.ArrayList" scope="request" />
+			RequestDispatcher rd = request.getRequestDispatcher(jspName);
 			rd.forward(request, response);
+			
 		}
 		
 		
