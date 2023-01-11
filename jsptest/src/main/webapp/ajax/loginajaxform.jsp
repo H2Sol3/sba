@@ -25,19 +25,6 @@ $("#ajaxbtn").on('click',function(){
 });
 });
 
-// $("#ajaxbtn").on('click', function(){
-// 	$.ajax({
-// 		url:"loginajaxresult.jsp",
-// 		data : {'id': $("#id").val()  , 'pw':$("#pw").val() },
-// 		type : 'get',
-// 		dataType :'json',
-// 		success : function(server){
-// 			$("#result").html(server.logintime + " 시각에 로그인 " + server.login);
-// 		}//success end
-// 	});//ajax end
-// });//on end
-// });//ready end
-
 </script>
 </head>
 <body>
