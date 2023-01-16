@@ -118,17 +118,29 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- 추가 mavenrepository 다운로드 -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>cglib</groupId> -->
-<!-- 			<artifactId>cglib</artifactId> -->
-<!-- 			<version>2.2.2</version> -->
-<!-- 		</dependency> -->
-		
+		<!-- <dependency> -->
+		<!-- <groupId>cglib</groupId> -->
+		<!-- <artifactId>cglib</artifactId> -->
+		<!-- <version>2.2.2</version> -->
+		<!-- </dependency> -->
+		<!-- aop사용하기 위한 라이브러리 -->
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
 			<version>1.9.9.1</version>
 			<scope>runtime</scope>
+		</dependency>
+		
+		<!-- mybatis -->
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.5.6</version>
 		</dependency>
 
 	</dependencies>
