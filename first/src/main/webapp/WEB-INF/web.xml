@@ -7,7 +7,7 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/spring/root-context.xml
-		classpath:annotation/springmvc/member.xml
+		classpath:spring/mybatis/spring-mybatis.xml
 		</param-value>
 	</context-param>
 	
