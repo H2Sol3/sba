@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 public class MemberDTO {
 	String id, pw, name, email, phone, address, indate;
 
-	MemberDTO() {
+	public MemberDTO() {
 
 	}
 
