@@ -1,0 +1,42 @@
+#서버포트
+server.port=8085
+
+#jsp 뷰 설정
+spring.mvc.view.prefix=/WEB-INF/views/
+spring.mvc.view.suffix=.jsp
+
+
+#jsp추가
+# ajax, file upload 라이브러리 boot 내장
+
+
+#servlet, jsp, jstl 사용하려면 라이브러리 추가 필요!
+#ajax, fileupload 사용은 라이브러리가 내장되어있음
+
+
+#파일용량 부트 1개 파일에 대해서 용량제한을 기본 1mb에서 50mb로 변경
+spring.servlet.multipart.max-file-size=50mb
+#파일용량 부트 요청 1개에 대한 크기
+spring.servlet.multipart.max-request-size=100mb
+
+
+#MY BATIS
+spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+spring.datasource.url=jdbc:mariadb://localhost:3306/memberdb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

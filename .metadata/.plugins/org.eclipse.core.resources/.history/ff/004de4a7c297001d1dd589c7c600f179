@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+#chatarea {background-color : yellow}
+</style>
+</head>
+<body>
+별명: <input type="text" id="nickname" value="${param.id}">
+<input type="button" id="enterbtn" value="입장">
+<h1>채팅영역</h1>
+<div id="chatarea">채팅내용표시<br></div>
+</body>
+</html>

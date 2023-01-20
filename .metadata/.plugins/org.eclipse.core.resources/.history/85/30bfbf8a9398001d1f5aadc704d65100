@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table border=2px style="text-align: center">
+<tr style="background-color: lightgrey"><th>글번호</th><th>제목</th><th>내용</th><th>작성자</th><th>조회수</th><th>날짜</th></tr>
+<tr>
+<td style="background-color: pink">${dto.seq }</td>
+<td style="background-color: skyblue">${dto.seq }>${dto.title }</td>
+<td style="background-color: lemon">${dto.seq }>${dto.contents }</td>
+<td style="background-color: aqua">${dto.seq }>${dto.writer }</td>
+<td style="background-color: orange">${dto.seq }>${dto.viewcount }</td>
+<td style="background-color: maroon;">${dto.seq }>${dto.writingtime }</td>
+</tr>
+</table>
+</body>
+</html>

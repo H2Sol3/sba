@@ -1,0 +1,12 @@
+package board.spring.mybatis;
+
+public class BoardDTO {
+	int seq;
+	String title,contents,writer;
+	int viewcount;
+	String writingtime;
+	
+	//create table(컬럼명 나열 순서 insert)
+	
+	
+}

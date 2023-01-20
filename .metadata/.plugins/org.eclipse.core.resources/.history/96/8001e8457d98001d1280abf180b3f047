@@ -1,0 +1,7 @@
+package board.spring.mybatis;
+
+public class BoardDTO {
+	int seq;
+	String title,contents,writer;
+	int viewcount;
+}

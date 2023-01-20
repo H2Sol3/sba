@@ -1,0 +1,17 @@
+#서버포트
+server.port=8085
+
+#jsp 뷰 설정
+spring.mvc.view.prefix=/WEB-INF/views/
+spring.mvc.view.suffix=.jsp
+
+
+#jsp추가
+# ajax, file upload 라이브러리 boot 내장
+
+
+
+
+
+
+

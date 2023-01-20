@@ -1,0 +1,8 @@
+package websocket;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration //내가 설정파일이야~ 알려주는 어노테이션
+public class ChatWebSocketConfig {
+// ws요청시 ChatWebSocketHandler
+}
